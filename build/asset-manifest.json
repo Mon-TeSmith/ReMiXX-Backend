@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Mon-TeSmith/ReMiXX-Backend/static/css/main.3c0127d1.css",
+    "main.js": "/Mon-TeSmith/ReMiXX-Backend/static/js/main.df99e076.js",
+    "index.html": "/Mon-TeSmith/ReMiXX-Backend/index.html",
+    "main.3c0127d1.css.map": "/Mon-TeSmith/ReMiXX-Backend/static/css/main.3c0127d1.css.map",
+    "main.df99e076.js.map": "/Mon-TeSmith/ReMiXX-Backend/static/js/main.df99e076.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3c0127d1.css",
+    "static/js/main.df99e076.js"
+  ]
+}

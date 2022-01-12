@@ -1,18 +1,18 @@
 import React, { Component } from "react";
-//import reactDom from "react-dom";
+import reactDom from "react-dom";
 import axios from "axios";
 import VideoItem from "./Component/VideoItem/VideoItem";
 import SideBar from "./Component/SideBar/SideBar";
 import SearchBar from "./Component/SearchBar/SearchBar";
 import CommentArea from "./Component/CommentArea/commentArea";
-import NavBar from "./Component/NavBar/NavBar";
+import NavBar from "./Component/NavBar/NavBar"
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       videos: [],
-      videoID: "paaR5szOfKU",
+      videoID: "A1kzG9Ld1kI&ab",
       object: null,
       comment: "",
     };
@@ -20,14 +20,14 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.fetchVideos("StephenASmith");
+    this.fetchVideos("BrianMcKnight");
     console.log(this.state.videos);
   }
 
   async fetchVideos(search) {
     try {
       let response = await axios.get(
-        `https://www.googleapis.com/youtube/v3/search?key=AIzaSyCRdm0OshByuYaD45qs8dso70aMBXtiwRk&maxResults=30&q=${search}&type=video&part=snippet`
+        'https://www.google.com/search?sxsrf=AOaemvKjpZyFU47vlVgd9SuxN74U_aX-XQ:1641929657358&q=youtube+api+video+id+brian+mcknight+uh+oh&spell=1&sa=X&ved=2ahUKEwj-8OPPuKr1AhXQLs0KHVMzDfkQBSgAegQIARAy&biw=1413&bih=924&dpr=1'
       );
       console.log(response.data);
       this.setState({ videos: response.data.items });
